@@ -1,0 +1,37 @@
+functions:
+
+  arxiv:
+    name: arxiv_func
+    description: Use this tool when user need to fund something on arxiv site
+    parameters:
+      type: object
+      properties:
+        query:
+          type: string
+          description: What need to find
+      required:
+        - query
+
+  wiki:
+    name: wiki_func
+    description: Use this tool when user asked to find something on wikipedia
+    parameters:
+      type: object
+      properties:
+        query:
+          type: string
+          description: What need to find
+      required:
+        - query
+
+  search:
+    name: search_func
+    description: When need to find data in duckduckgo formally google, but not in arxiv or wikipedia
+    parameters:
+      type: object
+      properties:
+        query:
+          type: string
+          description: What need to find
+      required:
+        - query
