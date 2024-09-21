@@ -4,11 +4,11 @@ class ChatHistory:
         self.history_limit = history_limit
 
         self.system_prompt = \
-            f"You are a helpful assistant with access to the following functions. Use them if required - \n" \
-            f"{str(functions)}\n\n" \
-            f"<functioncall> {{ \"name\": \"function_func\", \"arguments\": {{\"query\": \"search string\"}} }}\n\n" \
-            f"Edge cases you must handle:\n" \
-            f" - If there are no functions that match the user request, you will respond using your knowledge base."
+            f"Вы полезный помощник с доступом к следующим функциям. Используйте их, если это необходимо - " \
+            f"{str(functions)}\n" #\
+            # f"<functioncall> {{ \"name\": \"function_func\", \"arguments\": {{\"query\": \"search string\"}} }}\n\n" \
+            # f"Edge cases you must handle:\n" \
+            # f" - If there are no functions that match the user request, you will respond using your knowledge base."
 
         self.messages = [{
             "role": "system",
